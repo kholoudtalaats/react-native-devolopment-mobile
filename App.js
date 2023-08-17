@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Index from './src/home/index';
+import SignIn from './src/screens/auth/signin';
 
 import Home from './src/screens/Home';
-import SignIn from './src/screens/auth/signin';
+import { StatusBar } from 'expo-status-bar';
+
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <SignIn/>
+      <Index/>
     </View>
   );
 }
